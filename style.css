@@ -1,0 +1,29 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.curved {
+    border-bottom-right-radius: 30% 40%;
+}
+
+
+.color {
+    background-color: #143466;
+}
+
+.circular {
+    border-radius: 50%;
+
+}
+

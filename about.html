@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>About - Path Finders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pathFinders.js"></script>
+</head>
+
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Social Media Icons and Contact -->
+    <div class="bg-gray-100 text-[#143466] p-4 hidden md:flex justify-between items-center">
+        <div class="flex space-x-8 mx-4">
+            <a href="https://www.facebook.com/pathfindersoverseasedu/"
+                class="bg-[#143466] text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white hover:text-[#143466] transition duration-300">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@pathfindersoverseasedu"
+                class="bg-[#143466] text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white hover:text-[#143466] transition duration-300">
+                <i class="fab fa-tiktok fa-lg"></i>
+            </a>
+
+            <a href="https://www.instagram.com/pathfindersoverseasedu/"
+                class="bg-[#143466] text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white hover:text-[#143466] transition duration-300">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@PathFindersOverseasEducation"
+                class="bg-[#143466] text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white hover:text-[#143466] transition duration-300">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/pathfindersoverseasedu/"
+                class="bg-[#143466] text-white rounded-full w-9 h-9 flex items-center justify-center hover:bg-white hover:text-[#143466] transition duration-300">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+
+        </div>
+        <div class="text-[#143466] mx-4"><i class="fas fa-phone"></i> UAN: (+92) 300-5588834 </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="shadow-md border-1 border-red-800">
+        <div class="bg-gray-200">
+            <div class="container mx-auto p-4 flex justify-between items-center">
+                <img src="images/PathFindersLogo.png" alt="PathFindersLogo" class="h-16 w-86">
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-[#143466]"><i class="fas fa-bars fa-2x"></i></button>
+                </div>
+                <nav id="menu"
+                    class="hidden absolute top-16 left-0 w-full md:static bg-white md:flex md:space-x-6 md:w-auto md:bg-transparent flex-col md:flex-row">
+
+                    <a href="/index.html" class="hover:text-[#d5b377] text-[#8d1926] block py-4 px-4">Home</a>
+                    <a href="/services.html" class="hover:text-[#d5b377] text-[#8d1926] block py-4 px-4">Services</a>
+
+                    <!-- Study Abroad Dropdown -->
+                    <div class="relative group">
+                        <a href="/studyinus.html"
+                            class="hover:text-[#d5b377] text-[#8d1926] block py-4 px-4 transition duration-900">Study
+                            Abroad</a>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute left-0 top-full mt-2 hidden group-hover:flex flex-col bg-white shadow-lg rounded-md z-50 w-40">
+
+                            <a href="/studyinus.html"
+                                class="block px-4 py-2 text-[#143466] hover:bg-[#143466] hover:text-white transition duration-200">
+                                USA
+                            </a>
+                            <a href="/studyinuk.html"
+                                class="block px-4 py-2 text-[#143466] hover:bg-[#143466] hover:text-white transition duration-200">UK</a>
+                            <a href="/studyincanada.html"
+                                class="block px-4 py-2 text-[#143466] hover:bg-[#143466] hover:text-white transition duration-200">Canada</a>
+                            <a href="/studyinaustralia.html"
+                                class="block px-4 py-2 text-[#143466] hover:bg-[#143466] hover:text-white transition duration-200">Australia</a>
+                            <a href="/studyinfinland.html"
+                                class="block px-4 py-2 text-[#143466] hover:bg-[#143466] hover:text-white transition duration-200">Finland</a>
+                        </div>
+                    </div>
+                    <a href="/about.html" class="hover:text-[#d5b377] text-[#8d1926] block py-4 px-4">About</a>
+                    <a href="/contact.html" class="hover:text-[#d5b377] text-[#8d1926] block py-4 px-4">Contact</a>
+                    <button
+                        class="bg-[#8d1926] text-white px-4 py-2 rounded-full hover: m-2 transform transition-transform duration-300 hover:-translate-y-2">
+                        Apply Now
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="bg-[#143466] text-white py-16 curved">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Text Content -->
+            <div class="md:w-1/2 p-4">
+                <h2 class="text-4xl font-bold mb-4">Why We Are Unique</h2>
+                <p class="text-lg">Path Finders is one of the best education consultants in Pakistan.
+                    We stand among the top study abroad consultants and provide detailed guidance on study abroad
+                    programs to students.</p>
+
+                <ul class="text-lg text-gray-200 mt-4 list-disc list-inside">
+                    <li>Located in Rawalpindi, with branches in over 5 cities across Pakistan.</li>
+                    <li>More than 30 counselors providing professional guidance.</li>
+                    <li>Around 250 ambassadors working internationally.</li>
+                    <li>Collaborations with 30 top educational institutions in Pakistan and over 20 foreign
+                        universities.</li>
+                    <li>Trained Education Consultants ensure a smooth and hassle-free visa process.</li>
+                    <li>Assistance with visa interview preparations and the student visa application process.</li>
+                    <li>Get expert advice from the best visa consultants in Rawalpindi – <strong>Path Finders</strong>.</li>
+                </ul>
+
+                <a href="services.html"
+                    class="mt-6 bg-white text-blue-900 py-2 px-6 rounded-full hover:bg-gray-100 m-2 transform transition-transform duration-300 hover:-translate-y-2 hover:text-[#d5b377] inline-block">
+                    Explore Services Today
+                </a>
+
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2 p-4 flex justify-center">
+                <div class="image-zoom rounded-lg overflow-hidden">
+                    <img src="images/indexpage.png" alt="Study Abroad"
+                        class="w-full h-auto object-cover rounded-b-[200px] md:rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gray-100">
+        <section class="container mx-auto px-4 lg:px-10 py-16 flex flex-col items-center text-center">
+            <h2 class="text-4xl font-semibold mb-4 text-[#143466]">We Serve Around The Globe</h2>
+            <!-- Counter Section -->
+            <div class="mt-8 flex flex-wrap justify-center gap-10">
+                <div class="text-center">
+                    <span class="text-4xl text-[#8d1926] counter" data-target="5">0</span> +
+                    <p class="text-gray-600">Countries</p>
+                </div>
+                <div class="text-center">
+                    <span class="text-4xl text-[#8d1926] counter" data-target="3">0</span> +
+                    <p class="text-gray-600">Branches</p>
+                </div>
+                <div class="text-center">
+                    <span class="text-4xl text-[#8d1926] counter" data-target="94">0</span> %
+                    <p class="text-gray-600">Visa Success Rate</p>
+                </div>
+                <div class="text-center">
+                    <span class="text-4xl text-[#8d1926] counter" data-target="70">0</span> +
+                    <p class="text-gray-600">Visa Processing</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Start you journey section -->
+    <section class="bg-[#143466] text-white py-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Text Content -->
+            <div class="md:w-1/2 p-4">
+                <h3 class="text-xl font-semibold text-[#d5b377] mb-4">let's Start Today</h3>
+                <p class="text-4xl">Start Your Journey With Us</p>
+                <p class="text-sm text-gray-100 mt-4">Your trusted partner for seamless study visa solutions abroad.
+                    From application to arrival, we ensure a smooth transition to your academic journey.</p>
+                <a href="services.html"
+                    class="mt-8 bg-white text-blue-900 py-2 px-6 rounded-full hover:bg-gray-100 m-2 transform transition-transform duration-300 hover:-translate-y-2 hover:text-[#d5b377] inline-block">
+                    Get Started Now
+                </a>
+
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2 p-4 flex justify-center">
+                <div class="image-zoom rounded-lg overflow-hidden">
+                    <img src="images/aboutPage.png" alt="Study Abroad"
+                        class="w-full h-auto object-cover rounded-b-[200px] md:rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How we work section -->
+    <div class="bg-gray-100 p-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-semibold text-[#8d1926] mb-2 mt-4">How We Work</h3>
+            <h2 class="text-4xl font-semibold text-[#143466] mb-8">Our Admission Process</h2>
+            <p class="text-gray-600 mb-12">
+                Our admission process includes an online application, required documents, and an interview.
+                We evaluate candidates holistically and notify successful applicants promptly.
+            </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/get all details.gif" alt="Get All Details" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">Get All Details</h4>
+                <p class="text-gray-600 mt-2">
+                    Reach out to us to get all details and guidance for studying abroad from our expert education
+                    consultants.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/university selection.gif" alt="University Selection" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">University Selection</h4>
+                <p class="text-gray-600 mt-2">
+                    Choose the right university for abroad education according to your choice.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/meet requirements.gif" alt="Meet Requirements" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">Meet Requirements</h4>
+                <p class="text-gray-600 mt-2">
+                    Our professionals will guide you to meet all requirements for study abroad programs.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/apply to university.gif" alt="Apply To University" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">Apply To University</h4>
+                <p class="text-gray-600 mt-2">
+                    Apply to your selected foreign university. Our study abroad consultants streamline the student visa
+                    application process.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/interview preparation.gif" alt="Interview Preparation" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">Interview Preparation</h4>
+                <p class="text-gray-600 mt-2">
+                    Pass your international university interview with the help of our education counselor.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-[#143466] p-4 rounded-md">
+                    <img src="/icons/visa granted.gif" alt="Visa Granted" class="w-16 h-16">
+                </div>
+                <h4 class="font-semibold text-lg mt-4 text-[#143466]">Visa Granted</h4>
+                <p class="text-gray-600 mt-2">
+                    Finally, your visa is granted. Get ready to travel to study abroad!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why choose us -->
+
+    <section class="bg-[#143466] text-white py-16 rounded-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Text Content -->
+            <div class="md:w-1/2 p-4">
+                <h3 class="text-xl font-semibold text-[#d5b377] mb-4">Why Choose us</h3>
+                <p class="text-4xl">Path Finders</p>
+                <p class="text-sm text-gray-100 mt-4">We offer free consultation to help students in planning their
+                    study abroad journey. Our abroad education consultants provide guidance on selecting the right
+                    university and preparing your student visa application. </p>
+                <p class="text-sm text-gray-100 mt-4"> Our expert provides personalized support to make your study
+                    overseas experience stress-free and successful. We understand your goals and needs and give the best
+                    advice according to your situation.</p>
+                <a href="services.html"
+                    class="mt-8 bg-white text-blue-900 py-2 px-6 rounded-full hover:bg-gray-100 m-2 transform transition-transform duration-300 hover:-translate-y-2 hover:text-[#d5b377] inline-block">
+                    Get Started Now
+                </a>
+
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2 p-4 flex justify-center">
+                <div class="image-zoom rounded-lg overflow-hidden">
+                    <img src="images/about page.png" alt="Study Abroad"
+                        class="w-full h-auto object-cover rounded-b-[200px] md:rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who am I -->
+    <section class="bg-gray-100 p-6">
+        <div
+            class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center gap-6">
+            <!-- Image Section -->
+            <div class="relative w-full md:w-1/2">
+                <img src="/images/FB23 c.JPG" alt="Umer Farooq" class="w-full rounded-lg shadow-md">
+                <div class="absolute bottom-4 left-4 bg-blue-900 text-white px-32 py-2 rounded-lg">
+                    <h2 class="text-lg font-semibold">Malik Imran Khan</h2>
+                    <p class="text-sm">CEO</p>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="w-full md:w-1/2 text-center md:text-left ml-8">
+                <h4 class="text-sm text-[#143466] font-semibold">CHIEF EXECUTIVE OFFICER</h4>
+                <h1 class="text-3xl font-bold text-gray-900 mt-2">I'm Malik Imran Khan</h1>
+                <p class="text-gray-600 mt-4">Hi, I’m the founder of Path Finders Overseas Education, an educational consultancy dedicated to guiding students toward international academic success. <br><br> I have also established several successful ventures including Transverse International Pvt Ltd, Imran Khan & Brothers SMC Ltd, Bawaqar Traders, and Milestone Destinations Pvt Ltd.<br><br> I have played a vital role in the business development and strategic growth of these companies, driving innovation and creating impactful opportunities across various sectors.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="bg-gray-100 flex justify-center px-4 py-8 sm:py-10">
+        <div
+            class="max-w-6xl w-full rounded-[100px] bg-blue-900 text-white rounded-2xl flex flex-wrap items-center justify-center sm:justify-between p-6 sm:p-10 shadow-lg">
+
+            <!-- Call Section -->
+            <div class="flex items-center gap-4 w-full sm:w-1/3 text-center sm:text-left mb-6 sm:mb-0">
+                <div class="bg-white p-4 rounded-full flex justify-center items-center">
+                    <img src="icons/call.gif" alt="Call Icon" class="w-8 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Give Us A Call</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">(+92) 300-5588834 </p>
+                </div>
+            </div>
+
+            <!-- Location Section -->
+            <div class="flex items-center gap-4 w-full sm:w-1/3 text-center sm:text-left mb-6 sm:mb-0">
+                <div class="bg-white p-4 rounded-full flex justify-center items-center">
+                    <img src="icons/location.gif" alt="Location Icon" class="w-16 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Head Office Location</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Office No 328, 3rd Floor, Rawal Mall & Residencia,
+                        Murree Road, Rawalpindi.</p>
+                </div>
+            </div>
+
+            <!-- Email Section -->
+            <div class="flex items-center gap-4 w-full sm:w-1/3 text-center sm:text-left">
+                <div class="bg-white p-4 rounded-full flex justify-center items-center">
+                    <img src="icons/email.gif" alt="Email Icon" class="w-8 h-8">
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Email Address</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">info@pathfinders.com.pk</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 bg-white py-10 px-6 md:px-16 lg:px-32 shadow-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+            <!-- Left Section: Logo and Description -->
+            <div class="text-center md:text-left">
+                <img src="/images/PathFindersLogo.png" alt="PathFindersLogo Logo" class="w-40 mx-auto md:mx-0">
+                <p class="text-gray-600 mt-4 text-sm md:w-64">
+                    Path Finders is dedicated to equipping students for success abroad and helping them become skilled
+                    professionals and thoughtful contributors to society.
+                </p>
+                <div class="flex justify-center md:justify-start gap-4 mt-6">
+                    <i class="fab fa-facebook fa-lg"></i>
+                    <i class="fab fa-instagram fa-lg"></i>
+                    <i class="fab fa-linkedin fa-lg"></i>
+                    <i class="fab fa-tiktok fa-lg"></i>
+                </div>
+            </div>
+
+            <!-- Middle Section: Business Proposals -->
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold text-gray-800">For Business Proposals</h3>
+                <div class="flex items-center gap-2 mt-2 justify-center md:justify-start">
+                    <img src="/icons/email.gif" alt="Email Icon" class="w-5">
+                    <p class="text-gray-600 text-sm">hammad@pathfinders.com.pk</p>
+                </div>
+                <div class="flex items-center gap-2 mt-2 justify-center md:justify-start">
+                    <img src="/icons/call.gif" alt="Phone Icon" class="w-5">
+                    <p class="text-gray-600 text-sm">Rao Hammad Riaz</p>
+                </div>
+            </div>
+
+            <!-- Right Section: Contact Us -->
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold text-gray-800">Contact Us</h3>
+                <div class="flex items-center gap-2 mt-2 justify-center md:justify-start">
+                    <img src="/icons/call.gif" alt="Phone Icon" class="w-5">
+                    <p class="text-gray-600 text-sm">+92 300 5588834</p>
+                </div>
+                <div class="flex justify-center md:justify-start mt-1">
+                    <img src="/icons/QRCode.gif" alt="QR Code" class="w-10">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+923005588834" target="_blank" class="fixed bottom-6 right-6 z-50 group whatsapp-button"
+        aria-label="Chat with us on WhatsApp">
+        <div
+            class="bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition duration-300 transform group-hover:scale-110">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </div>
+    </a>
+
+</body>
+
+</html>
